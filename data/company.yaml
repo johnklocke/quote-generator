@@ -1,0 +1,87 @@
+# Company profile and price list for the quote generator.
+# Swap this file for a real client's details and prices. No code changes needed.
+# qty_words: the units people say after a number ("12 gaps"). Plurals are handled automatically.
+# (Sample data: a fictional pest and wildlife company.)
+
+company:
+  name: Summit Pest & Wildlife
+  tagline: Sample company for demo purposes
+  phone: (555) 010-2400
+  email: quotes@summit-pest.example
+  address: 100 Example Ave, Springfield
+  brand_color: "#1F4E79"
+
+pricing:
+  tax_rate: 0.07            # sales tax on the subtotal after discounts
+  minimum_job: 150.00       # quotes below this are raised to the minimum
+  bundle_discount:
+    min_services: 3         # 3+ different services on one quote...
+    percent: 10             # ...get 10% off one-time services (not plans)
+  valid_days: 30
+
+terms:
+  - Quote valid for 30 days from the date above.
+  - 50% deposit to schedule; balance due on completion.
+  - Exclusion work carries a 1-year warranty on sealed entry points.
+
+services:
+  - code: INSP
+    name: Inspection and assessment
+    unit: flat
+    price: 95.00
+    keywords: [inspect, inspection, assess, assessment, take a look]
+
+  - code: GEN
+    name: General pest treatment (interior and exterior)
+    unit: visit
+    price: 145.00
+    keywords: [ants, spiders, roaches, cockroaches, silverfish, beetles, general pest, bugs]
+    qty_words: [visit, treatment]
+
+  - code: PLAN
+    name: Quarterly prevention plan (4 visits per year)
+    unit: year
+    price: 420.00
+    recurring: true
+    keywords: [quarterly, ongoing, prevention plan, service plan, year-round, every season]
+
+  - code: RX
+    name: Rodent exclusion (seal entry points)
+    unit: entry point
+    price: 65.00
+    keywords: [mice, mouse, rats, rodent, rodents, entry point, gaps, holes]
+    qty_words: [entry point, gap, hole, opening]
+
+  - code: RT
+    name: Rodent trapping with 3 follow-up visits
+    unit: flat
+    price: 275.00
+    keywords: [trap, traps, trapping, mice, mouse, rats]
+
+  - code: BN
+    name: Bird netting installation
+    unit: sq ft
+    price: 4.50
+    keywords: [netting, bird net, nesting under, under the deck, under the eaves]
+    qty_words: [sq ft, sq. ft, square feet, square foot, sf]
+
+  - code: BS
+    name: Bird spikes on ledges
+    unit: linear ft
+    price: 12.00
+    keywords: [spikes, ledge, ledges, sign, roofline]
+    qty_words: [linear feet, linear ft, feet of ledge, ft of ledge, feet, ft]
+
+  - code: WR
+    name: Wildlife removal (raccoon, squirrel, bat)
+    unit: animal
+    price: 225.00
+    keywords: [raccoon, raccoons, squirrel, squirrels, bat, bats, possum, opossum, skunk]
+    qty_words: [raccoon, squirrel, bat, animal, possum, opossum, skunk]
+
+  - code: AC
+    name: Attic cleanup and sanitizing
+    unit: sq ft
+    price: 2.75
+    keywords: [droppings, attic cleanup, sanitize, sanitizing, insulation, attic smells]
+    qty_words: [sq ft of attic, sq. ft of attic, sq ft attic, square feet of attic, sq ft, sq. ft, square feet]
